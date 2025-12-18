@@ -3,7 +3,7 @@
 Personal portfolio website showcasing projects and skills in Data Analysis, Web Development, and Data Visualization.
 
 ## Live Demo
-Visit: https://YOUR_USERNAME.github.io/portfolio/
+Visit: https://minhdang206.github.io/portfolio/
 
 ## Features
 - Responsive design with Bootstrap
