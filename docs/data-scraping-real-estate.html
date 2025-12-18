@@ -8,9 +8,9 @@
       <meta name="author" content="Devcrud">
       <title>Dawn Tran's Portfolio</title>
       <!-- font icons -->
-      <link rel="stylesheet" href= 'dawntran/assets/vendors/themify-icons/css/themify-icons.css'>
+      <link rel="stylesheet" href="/portfolio/dawntran/assets/vendors/themify-icons/css/themify-icons.css">
       <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href='dawntran/assets/css/dawntran.css'>
+    <link rel="stylesheet" href="/portfolio/dawntran/assets/css/dawntran.css">
     
   </head>
   <style>
@@ -33,25 +33,25 @@
       <!-- Page Navbar -->
       <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href='index.html'>Dawn Tran</a>
+            <a class="logo" href="/portfolio/index.html">Dawn Tran</a>
               <ul class="nav">
                 <!-- <li class="item">
-                  <a class="link" href='index.html'>Home</a>
+                  <a class="link" href="/portfolio/index.html">Home</a>
                 </li> -->
                 <li class="item en">
-                  <a class="link" href='index.html#about'>About Me</a>
+                  <a class="link" href="/portfolio/index.html#about">About Me</a>
                 </li>
                 <li class="item vi hidden">
-                  <a class="link" href='index.html#about'>Giới thiệu bản thân</a>
+                  <a class="link" href="/portfolio/index.html#about">Giới thiệu bản thân</a>
                 </li>
                 <li class="item">
-                  <a class="link" href='index.html#portfolio'>Portfolio</a>
+                  <a class="link" href="/portfolio/index.html#portfolio">Portfolio</a>
                 </li>
                 <li class="item en" style="width: 57px; height: 24px">
-                  <a class="link" href='index.html#contact'>Contact</a>
+                  <a class="link" href="/portfolio/index.html#contact">Contact</a>
                 </li>
                 <li class="item item_contact vi hidden" style="width: 57px; height: 24px">
-                  <a class="link" href='index.html#contact'>Liên hệ</a>
+                  <a class="link" href="/portfolio/index.html#contact">Liên hệ</a>
                 </li>
                 <li class="item">
                   <button class="btn_lang" style="width:34px; height: 28px; " id="language-toggle">EN</button>
@@ -86,7 +86,7 @@
 		</ul>
 	  <h2>Overview of the System</h2>
 		<div style="text-align: center;">
-			<img class="en" style="width: 500px; height: 600px;" src='dawntran/assets/imgs/realestate_scrapy/f1.1_en.png' alt="Overview of the System">
+			<img class="en" style="width: 500px; height: 600px;" src="/portfolio/dawntran/assets/imgs/realestate_scrapy/f1.1_en.png" alt="Overview of the System">
 	  </div>
 	  <span>- Main modules:</span>
 		<ul>
@@ -96,7 +96,7 @@
 		<span>- Describe: </span>
 	  <p style="text-indent: 2em;">The real estate data collection system begins with the Real Estate Listings Scraping Module, which retrieves URLs of real estate listings. These URLs are then stored in a temporary queue referred to as "Info url" files. Once completed, the Detailed Real Estate Information Scraping Module runs to extract information from each real estate listing. The collected data includes JSON files (containing data fields), TXT files (containing HTML source code), and downloaded image files. Specific details will be described in the diagram.</p>
 		<p style="text-indent: 2em;">The checkpoint file is a JSON file containing information such as the collection status, number of pages collected, and the last executed module. This allows us to resume the incomplete process without starting over in case of system errors.</p>
-		<p>After scraping and processing, the data is stored in a database. For a description of the database structure and integration with Django, please refer to <strong><a href='webapp-real-estate.html'>the link here.</a></strong></p>
+		<p>After scraping and processing, the data is stored in a database. For a description of the database structure and integration with Django, please refer to <strong><a href="/portfolio/webapp-real-estate.html">the link here.</a></strong></p>
   </article>
 </div>
 <div class="container vi hidden">
@@ -109,7 +109,7 @@
 		</ul>
 	  <h2>Tổng quan về hệ thống</h2>
 	  <div style="text-align: center;">
-			<img style="width: 500px; height: 600px;" src='dawntran/assets/imgs/realestate_scrapy/f1.1_vi.png' alt="Tổng Quan Hệ Thống">
+			<img style="width: 500px; height: 600px;" src="/portfolio/dawntran/assets/imgs/realestate_scrapy/f1.1_vi.png" alt="Tổng Quan Hệ Thống">
 	  </div>
 	  <span>- Thành phần chính:</span>
 		<ul>
@@ -119,7 +119,7 @@
 		<span>- Mô tả: </span>
 	  <p  style="text-indent: 2em;">Hệ thống thu thập dữ liệu bất động sản được hoạt động bắt đầu từ Module cào đường dẫn các bài đăng bất động sản sau đó được lưu trữ lại vào hàng chờ tạm gọi là các tệp tin "Info url". Sau khi hoàn thành thì Module cào dữ liệu chi tiết sẽ được chạy để lấy thông tin của các tin bất động sản dữ liệu được lưu trữ về gồm các tệp tin JSON (chứa các trường thông tin), txt (chứa mã nguồn html), các tệp hình ảnh tải về. Cụ thể sẽ được mô tả ở hình </p>
 		<p  style="text-indent: 2em;">Tệp tin checkpoint là tệp json chứa thông tin như trạng thái thu thập, số trang đã thu thập, module chạy cuối cùng để nếu xảy ra lỗi của hệ thống chúng ta có thể tiếp tục tiến trình đang dở dang mà không cần chạy lại từ đầu.</p>
-		<p>Dữ liệu được lưu trữ về sau khi cào về và xử lí sẽ lưu trữ vào cơ sở dữ liệu. Mô tả cơ sở dữ liệu và tích hợp Django mọi người có thể xem <strong><a href='webapp-real-estate.html'>tại đây</a></strong></p>
+		<p>Dữ liệu được lưu trữ về sau khi cào về và xử lí sẽ lưu trữ vào cơ sở dữ liệu. Mô tả cơ sở dữ liệu và tích hợp Django mọi người có thể xem <strong><a href="/portfolio/webapp-real-estate.html">tại đây</a></strong></p>
   </article>
 </div>
  
@@ -136,14 +136,14 @@
       </div> <!-- end of page footer -->
     
     <!-- core  -->
-      <script src='dawntran/assets/vendors/jquery/jquery-3.4.1.js'></script>
-      <script src='dawntran/assets/vendors/bootstrap/bootstrap.bundle.js'></script>
+      <script src="/portfolio/dawntran/assets/vendors/jquery/jquery-3.4.1.js"></script>
+      <script src="/portfolio/dawntran/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
       <!-- bootstrap 3 affix -->
-    <script src='dawntran/assets/vendors/bootstrap/bootstrap.affix.js'></script>
+    <script src="/portfolio/dawntran/assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Meyawo js -->
-    <script src='dawntran/assets/js/meyawo.js'></script>
+    <script src="/portfolio/dawntran/assets/js/meyawo.js"></script>
     <script>
       document.getElementById('language-toggle').addEventListener('click', function() {
           var englishTexts = document.querySelectorAll('.en');
