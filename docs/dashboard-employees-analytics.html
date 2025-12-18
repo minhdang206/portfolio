@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="descirption" content="Start your development with Meyawo landing page.">
+      <meta name="author" content="Devcrud">
+      <title>Dawn Tran's Portfolio</title>
+      <!-- font icons -->
+      <link rel="stylesheet" href= 'dawntran/assets/vendors/themify-icons/css/themify-icons.css'>
+      <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href='dawntran/assets/css/dawntran.css'>
+    
+  </head>
+  <style>
+    .hidden {
+        display: none;
+    }
+    @media (max-width: 768px) {
+      .btn_lang {
+        margin-top: 10px; 
+        margin-left: 10px;
+      }
+      .item_contact {
+        width: 100px !important; 
+        height: 24px
+      }
+    }
+
+  </style>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+      <!-- Page Navbar -->
+      <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href='index.html'>Dawn Tran</a>
+              <ul class="nav">
+                <!-- <li class="item">
+                  <a class="link" href='index.html'>Home</a>
+                </li> -->
+                <li class="item en">
+                  <a class="link" href='index.html#about'>About Me</a>
+                </li>
+                <li class="item vi hidden">
+                  <a class="link" href='index.html#about'>Giới thiệu bản thân</a>
+                </li>
+                <li class="item">
+                  <a class="link" href='index.html#portfolio'>Portfolio</a>
+                </li>
+                <li class="item en" style="width: 57px; height: 24px">
+                  <a class="link" href='index.html#contact'>Contact</a>
+                </li>
+                <li class="item item_contact vi hidden" style="width: 57px; height: 24px">
+                  <a class="link" href='index.html#contact'>Liên hệ</a>
+                </li>
+                <li class="item">
+                  <button class="btn_lang" style="width:34px; height: 28px; " id="language-toggle">EN</button>
+              </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </a>
+        </div>    
+      </nav><!-- End of Page Navbar -->
+      
+<!-- page header -->
+<header id="home" class="header">
+	<div class="overlay"></div>
+	<div class="header-content container">
+		<h1 class="header-title">
+			<span class="up">Data Visualization</span>
+		</h1>
+		<p class="header-subtitle">Employees Analytics Dashboard</p>            
+		<a href='menu-dashboard.html'' target="_blank"><button class="btn btn-primary">See more </button></a>
+	</div>              
+</header><!-- end of page header -->
+<!-- <div class="text-center">
+	<h1 class="text-center my-4">Real Estate Data Collection Report</h1>
+</div> -->
+<div class="row justify-content-center">
+	<div class="col" style="width: 1450px;">
+		<div class='tableauPlaceholder' id='viz1718855877673' style='position: relative'>
+			<noscript>
+				<a href='#'>
+					<img alt='Employees Analytics Dashboard' src='https://public.tableau.com/static/images/Em/EmployeesAnalyticsDashboard_17187933851450/EmployeesAnalyticsDashboard/1_rss.png' style='border: none' />
+				</a>
+			</noscript>
+			<object class='tableauViz' style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+					<param name='embed_code_version' value='3' />
+					<param name='site_root' value='' />
+					<param name='name' value='EmployeesAnalyticsDashboard_17187933851450/EmployeesAnalyticsDashboard' />
+					<param name='tabs' value='no' />
+					<param name='toolbar' value='yes' />
+					<param name='static_image' value='https://public.tableau.com/static/images/Em/EmployeesAnalyticsDashboard_17187933851450/EmployeesAnalyticsDashboard/1.png' />
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<param name='display_overlay' value='yes' />
+					<param name='display_count' value='yes' />
+					<param name='language' value='en-US' />
+			</object>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script type='text/javascript'>
+	var divElement = document.getElementById('viz1718855877673');
+	var vizElement = divElement.getElementsByTagName('object')[0];
+	if (divElement.offsetWidth > 800) {
+			vizElement.style.width = '1400px';
+			vizElement.style.height = '827px';
+	} else if (divElement.offsetWidth > 500) {
+			vizElement.style.width = '1400px';
+			vizElement.style.height = '827px';
+	} else {
+			vizElement.style.width = '100%';
+			vizElement.style.height = '1827px';
+	}
+	var scriptElement = document.createElement('script');
+	scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+	vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+ 
+      <!-- footer -->
+      <div class="container">
+        <footer class="footer">       
+          <p class="mb-0">Dawn Tran | dawntran.md@gmail.com | (+84)-393-219-945</p>
+          <div class="social-links text-right m-auto ml-sm-auto">
+              <a href="https://www.facebook.com/miinhdaang" target="_blank" class="link"><i class="ti-facebook"></i></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dawntran.md@gmail.com" target="_blank" class="link"><i class="ti-google"></i></a>
+              <a href="https://www.linkedin.com/in/minhdangtc/" class="link"><i class="ti-linkedin"></i></a>
+          </div>
+        </footer>
+      </div> <!-- end of page footer -->
+    
+    <!-- core  -->
+      <script src='dawntran/assets/vendors/jquery/jquery-3.4.1.js'></script>
+      <script src='dawntran/assets/vendors/bootstrap/bootstrap.bundle.js'></script>
+
+      <!-- bootstrap 3 affix -->
+    <script src='dawntran/assets/vendors/bootstrap/bootstrap.affix.js'></script>
+
+    <!-- Meyawo js -->
+    <script src='dawntran/assets/js/meyawo.js'></script>
+    <script>
+      document.getElementById('language-toggle').addEventListener('click', function() {
+          var englishTexts = document.querySelectorAll('.en');
+          var vietnameseTexts = document.querySelectorAll('.vi');
+          var button = document.getElementById('language-toggle');
+          
+          englishTexts.forEach(function(text) {
+              text.classList.toggle('hidden');
+          });
+          
+          vietnameseTexts.forEach(function(text) {
+              text.classList.toggle('hidden');
+          });
+  
+          if (button.textContent === 'VI') {
+              button.textContent = 'EN';
+          } else {
+              button.textContent = 'VI';
+          }
+      });
+    </script>
+  </body>
+</html>

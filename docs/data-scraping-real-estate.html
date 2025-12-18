@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="descirption" content="Start your development with Meyawo landing page.">
+      <meta name="author" content="Devcrud">
+      <title>Dawn Tran's Portfolio</title>
+      <!-- font icons -->
+      <link rel="stylesheet" href= 'dawntran/assets/vendors/themify-icons/css/themify-icons.css'>
+      <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href='dawntran/assets/css/dawntran.css'>
+    
+  </head>
+  <style>
+    .hidden {
+        display: none;
+    }
+    @media (max-width: 768px) {
+      .btn_lang {
+        margin-top: 10px; 
+        margin-left: 10px;
+      }
+      .item_contact {
+        width: 100px !important; 
+        height: 24px
+      }
+    }
+
+  </style>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+      <!-- Page Navbar -->
+      <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href='index.html'>Dawn Tran</a>
+              <ul class="nav">
+                <!-- <li class="item">
+                  <a class="link" href='index.html'>Home</a>
+                </li> -->
+                <li class="item en">
+                  <a class="link" href='index.html#about'>About Me</a>
+                </li>
+                <li class="item vi hidden">
+                  <a class="link" href='index.html#about'>Giới thiệu bản thân</a>
+                </li>
+                <li class="item">
+                  <a class="link" href='index.html#portfolio'>Portfolio</a>
+                </li>
+                <li class="item en" style="width: 57px; height: 24px">
+                  <a class="link" href='index.html#contact'>Contact</a>
+                </li>
+                <li class="item item_contact vi hidden" style="width: 57px; height: 24px">
+                  <a class="link" href='index.html#contact'>Liên hệ</a>
+                </li>
+                <li class="item">
+                  <button class="btn_lang" style="width:34px; height: 28px; " id="language-toggle">EN</button>
+              </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </a>
+        </div>    
+      </nav><!-- End of Page Navbar -->
+      
+<!-- page header -->
+<header id="home" class="header">
+	<div class="overlay"></div>
+	<div class="header-blog container">
+		<h1 class="header-title en">
+			<span style="font-size: 62px;">Data Crawling<br>Real Estate Website</span>
+		</h1>
+		<h1 class="header-title vi hidden">
+			<span style="font-size: 62px;">Hệ thống thu thập dữ liệu<br>Bất động sản</span>
+		</h1>
+	</div>
+</header><!-- end of page header -->
+<div class="container en">
+  <h1>Automated Data Crawling System</h1>
+  <article class="article">
+	  <p>The system is built to automatically collect data from real estate websites and operate continuously. It helps in updating new real estate data sources. The following article will provide an overview of how the system operates.</p>
+		<ul>
+			<li><strong>Programming Language: </strong>Python</li>
+			<li><strong>Tools: </strong><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium</a> (Selenium Webdriver)</li>
+		</ul>
+	  <h2>Overview of the System</h2>
+		<div style="text-align: center;">
+			<img class="en" style="width: 500px; height: 600px;" src='dawntran/assets/imgs/realestate_scrapy/f1.1_en.png' alt="Overview of the System">
+	  </div>
+	  <span>- Main modules:</span>
+		<ul>
+			<li><strong>Real Estate Listings Scraping Module:</strong> Collect list links to real estate posts.</li>
+			<li><strong>Detailed Real Estate Information Scraping Module:</strong> Collect detail info of real estate posts.</li>
+		</ul>
+		<span>- Describe: </span>
+	  <p style="text-indent: 2em;">The real estate data collection system begins with the Real Estate Listings Scraping Module, which retrieves URLs of real estate listings. These URLs are then stored in a temporary queue referred to as "Info url" files. Once completed, the Detailed Real Estate Information Scraping Module runs to extract information from each real estate listing. The collected data includes JSON files (containing data fields), TXT files (containing HTML source code), and downloaded image files. Specific details will be described in the diagram.</p>
+		<p style="text-indent: 2em;">The checkpoint file is a JSON file containing information such as the collection status, number of pages collected, and the last executed module. This allows us to resume the incomplete process without starting over in case of system errors.</p>
+		<p>After scraping and processing, the data is stored in a database. For a description of the database structure and integration with Django, please refer to <strong><a href='webapp-real-estate.html'>the link here.</a></strong></p>
+  </article>
+</div>
+<div class="container vi hidden">
+  <h1>Hệ thống thu thập dữ liệu tự động</h1>
+  <article class="article">
+	  <p>Hệ thống được xây dựng để thu thập dữ liệu từ các trang web bất động sản một cách tự động và hoạt động liên tục. Giúp cập nhật được các nguồn dữ liệu mới của bất động sản. Và bài viết dưới đây sẽ mô tả tổng quan về cách hoạt động của hệ thống.</p>
+		<ul>
+			<li><strong>Ngôn ngữ lập trình: </strong>Python</li>
+			<li><strong>Công cụ: </strong><a href="https://www.selenium.dev/documentation/" target="_blank">Selenium</a> (Selenium Webdriver)</li>
+		</ul>
+	  <h2>Tổng quan về hệ thống</h2>
+	  <div style="text-align: center;">
+			<img style="width: 500px; height: 600px;" src='dawntran/assets/imgs/realestate_scrapy/f1.1_vi.png' alt="Tổng Quan Hệ Thống">
+	  </div>
+	  <span>- Thành phần chính:</span>
+		<ul>
+			<li><strong>Module cào đường dẫn:</strong> Thu thập các liên kết đến các bài đăng bất động sản.</li>
+			<li><strong>Module cào dữ liệu chi tiết:</strong> Thu thập thông tin chi tiết từ các bài đăng.</li>
+		</ul>
+		<span>- Mô tả: </span>
+	  <p  style="text-indent: 2em;">Hệ thống thu thập dữ liệu bất động sản được hoạt động bắt đầu từ Module cào đường dẫn các bài đăng bất động sản sau đó được lưu trữ lại vào hàng chờ tạm gọi là các tệp tin "Info url". Sau khi hoàn thành thì Module cào dữ liệu chi tiết sẽ được chạy để lấy thông tin của các tin bất động sản dữ liệu được lưu trữ về gồm các tệp tin JSON (chứa các trường thông tin), txt (chứa mã nguồn html), các tệp hình ảnh tải về. Cụ thể sẽ được mô tả ở hình </p>
+		<p  style="text-indent: 2em;">Tệp tin checkpoint là tệp json chứa thông tin như trạng thái thu thập, số trang đã thu thập, module chạy cuối cùng để nếu xảy ra lỗi của hệ thống chúng ta có thể tiếp tục tiến trình đang dở dang mà không cần chạy lại từ đầu.</p>
+		<p>Dữ liệu được lưu trữ về sau khi cào về và xử lí sẽ lưu trữ vào cơ sở dữ liệu. Mô tả cơ sở dữ liệu và tích hợp Django mọi người có thể xem <strong><a href='webapp-real-estate.html'>tại đây</a></strong></p>
+  </article>
+</div>
+ 
+      <!-- footer -->
+      <div class="container">
+        <footer class="footer">       
+          <p class="mb-0">Dawn Tran | dawntran.md@gmail.com | (+84)-393-219-945</p>
+          <div class="social-links text-right m-auto ml-sm-auto">
+              <a href="https://www.facebook.com/miinhdaang" target="_blank" class="link"><i class="ti-facebook"></i></a>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dawntran.md@gmail.com" target="_blank" class="link"><i class="ti-google"></i></a>
+              <a href="https://www.linkedin.com/in/minhdangtc/" class="link"><i class="ti-linkedin"></i></a>
+          </div>
+        </footer>
+      </div> <!-- end of page footer -->
+    
+    <!-- core  -->
+      <script src='dawntran/assets/vendors/jquery/jquery-3.4.1.js'></script>
+      <script src='dawntran/assets/vendors/bootstrap/bootstrap.bundle.js'></script>
+
+      <!-- bootstrap 3 affix -->
+    <script src='dawntran/assets/vendors/bootstrap/bootstrap.affix.js'></script>
+
+    <!-- Meyawo js -->
+    <script src='dawntran/assets/js/meyawo.js'></script>
+    <script>
+      document.getElementById('language-toggle').addEventListener('click', function() {
+          var englishTexts = document.querySelectorAll('.en');
+          var vietnameseTexts = document.querySelectorAll('.vi');
+          var button = document.getElementById('language-toggle');
+          
+          englishTexts.forEach(function(text) {
+              text.classList.toggle('hidden');
+          });
+          
+          vietnameseTexts.forEach(function(text) {
+              text.classList.toggle('hidden');
+          });
+  
+          if (button.textContent === 'VI') {
+              button.textContent = 'EN';
+          } else {
+              button.textContent = 'VI';
+          }
+      });
+    </script>
+  </body>
+</html>
